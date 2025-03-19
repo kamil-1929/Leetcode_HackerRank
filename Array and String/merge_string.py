@@ -53,3 +53,24 @@ if __name__ == "__main__":
     merge = Merge()
     result = merge.mergeAlternately(word1, word2)
     print(result)
+
+
+class Merge(object):
+    def mergeAlternately(self, word1, word2):
+        merged = []
+        len1, len2 = len(word1), len(word2)
+        
+        for i in range(max(len1, len2)):
+            if i < len1:
+                merged.append(word1[i])
+            if i < len2:
+                merged.append(word2[i])
+        return ''.join(merged)
+
+if __name__ == "__main__":
+    word1 = "kml"
+    word2 = "ai S"
+    merge = Merge()
+    result = merge.mergeAlternately(word1, word2)
+    print(result)
+                
