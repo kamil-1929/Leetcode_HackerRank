@@ -43,6 +43,11 @@ class Solution:
         
         return ''.join(s)
         
-            
+if __name__ == "__main__":
+    reversed = Solution()
+    s = "abcasdfeg"
+    result = reversed.reverseVowels(s)
+    print(result)
+    
             
             
