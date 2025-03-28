@@ -72,15 +72,9 @@ print(solve.reduce_double_string("XYZ"))
 # stack = []
 
 # 'X' → push → ['X']
-
 # 'Y' → push → ['X', 'Y']
-
 # 'Z' → push → ['X', 'Y', 'Z']
-
 # 'Z' → matches top → pop → ['X', 'Y']
-
 # 'Y' → matches top → pop → ['X']
-
 # 'X' → matches top → pop → []
-
 # ✅ Final result: ''
