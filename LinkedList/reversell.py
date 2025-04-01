@@ -29,7 +29,7 @@ class ListNode:
 class Solution:
     def reverseList(self, head):
         prev = None 
-        curr = head
+        curr = head 
         
         while curr:
             next = curr.next 
